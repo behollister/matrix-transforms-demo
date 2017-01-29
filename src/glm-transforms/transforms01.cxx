@@ -141,12 +141,12 @@ int main( int argc, char* args[] )
 			glm::mat3 rot = glm::mat3( cos ( angle * PI / 180.0 ), sin ( angle * PI / 180.0 ), 0
 			                         , -sin ( angle * PI / 180.0 ), cos ( angle * PI / 180.0 ) , 0
 			                         , 0, 0 , 1.0  ) ;
-            static float tx = 0.0;
-            static float ty = 0.0;
-            tx += .05; ty += 0;
+			static float tx = 0.0;
+			static float ty = 0.0;
+			tx += .05; ty += 0;
 			glm::mat3 translate = glm::mat3( 1.0, 0.0, 0.0
-			                              , 0.0, 1.0, 0.0
-			                              , tx, ty, 1.0 ) ;
+										  , 0.0, 1.0, 0.0
+										  , tx, ty, 1.0 ) ;
 
 			static float sx = 1.0;
 			static float sy = 2.0;
